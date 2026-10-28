@@ -2,7 +2,8 @@ FROM ghcr.io/eu-digital-identity-wallet/eudi-srv-verifier-endpoint:latest
 COPY docker/keystore.jks /certs/keystore.jks
 
 ENV SPRING_PROFILES_ACTIVE=develop
-ENV VERIFIER_PUBLICURL=https://eudi-srv-verifier-endpoint-latest.onrender.com
+ENV VERIFIER_PUBLICURL=https://eudi-srv-verifier-endpoint.onrender.com
+ENV VERIFIER_CLIENTIDPREFIX=x509_hash
 ENV VERIFIER_DEFAULTHTTPRESPONSEMODE=DirectPost
 ENV VERIFIER_ACCESS_CERTIFICATE_SIGNING_ALGORITHM=ES512
 ENV VERIFIER_ACCESS_CERTIFICATE_KEYSTORE=file:///certs/keystore.jks
