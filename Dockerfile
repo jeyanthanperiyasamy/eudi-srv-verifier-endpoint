@@ -4,7 +4,7 @@ COPY docker/keystore.jks /certs/keystore.jks
 ENV SPRING_PROFILES_ACTIVE=develop
 ENV VERIFIER_PUBLICURL=https://eudi-srv-verifier-endpoint.onrender.com
 ENV VERIFIER_CLIENTIDPREFIX=x509_hash
-ENV VERIFIER_ORIGINALCLIENTID=YvCzrAesZe_Iwemcs3d1CvV3zSogWWizdsVfdjir_xI
+ENV VERIFIER_ORIGINALCLIENTID=PsrawnUk3XUiPLrabjZ9iiladGBZ8afGBLUXOkLjEEk
 ENV VERIFIER_DEFAULTHTTPRESPONSEMODE=DirectPost
 # Placeholder scheme for your host app's deeplink — rename "eudihostapp" to your app's actual registered custom URL scheme
 ENV VERIFIER_ALLOWEDREDIRECTURISCHEMES=eudihostapp
